@@ -7,4 +7,11 @@ for testCase in range(numberOfTestCases):
     arr = []
     for road in range(numberOfRoads):
         arr.append(input().split())
+    print(f"arr = roadPoint1, roadPoint2,if c==1 then npc else no npc")
     print(arr)
+
+    solution = "No"
+
+
+    print(solution)
+
