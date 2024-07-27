@@ -6,11 +6,16 @@ for testCase in range(numberOfTestCases):
     numberOfHouses,numberOfRoads = [int(x) for x in input().split()]
     
     connections = defaultdict(list)
+    optionalConnections = defaultdict(list)
+    memo = defaultdict(list)
     for road in range(numberOfRoads):
         roadPoint1, roadPoint2, c = input().split()
         if c == "1":
             connections[roadPoint1].append(roadPoint2)
             connections[roadPoint2].append(roadPoint1)
+        else:
+            optionalConnections[roadPoint1].append(roadPoint2)
+            optionalConnections[roadPoint2].append(roadPoint1)
     print(connections)
     route = ""
 
@@ -28,9 +33,11 @@ for testCase in range(numberOfTestCases):
         
         ext = []
         for i in connections[cur[-1]]:
-            if str(i) not in cur:
+            if f"{cur[-1]}{i}" not in memo[cur] and f"{i}{cur[-1]}" not in memo[cur]:
                 ext.append(cur + str(i))
+                memo[cur + str(i)] = memo[cur] + [f"{cur[-1]}{i}"]
 
+        print("memo:", memo)
         print("ext:", ext)
         queue = queue + ext
     print(queue)
