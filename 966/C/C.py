@@ -1,11 +1,8 @@
-t = int(input())
-
-for _ in range(t):
+for _ in range(int(input())): # for each testcase
     n = int(input()) # length of arr
     a = [int(x) for x in input().split()]
-    m = int(input()) # number of strings
 
-    for _ in range(m):
+    for _ in range(int(input())): # for each string
         s = input()
         stbl = {}
         atbl = {}
