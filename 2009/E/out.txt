@@ -1,0 +1,17 @@
+second a =  0
+second b =  1
+Cur:  1
+1
+second a =  10
+second b =  11
+Cur:  5
+1
+second a =  3
+second b =  7
+Cur:  3
+2
+second a =  11024999860405213
+second b =  11025000034594787
+Cur:  148450790
+122712006
+time:  14.626569986343384
