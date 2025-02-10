@@ -4,7 +4,7 @@ n, l, r, minDiff = map(int, input().split())
 difficulties = list(map(int, input().split()))
 numOfCombos = 0
 
-for mask in range(0, (1 << n)):
+for mask in range(1 << n):
     sumOfSubset = 0
     smallest = inf
     biggest = -inf
