@@ -1,0 +1,115 @@
+Codeforces
+In English По-русски
+marybauman | Logout
+ You have +227! Wow!
+
+HomeTopCatalogContestsGymProblemsetGroupsRatingEduAPICalendarHelp
+
+
+Codeforces Round 1086 (Div. 2)
+Finished
+Practice
+Add to favourites
+→ Virtual participation
+Virtual contest is a way to take part in past contest, as close as possible to participation on time. It is supported only ICPC mode for virtual contests. If you've seen these problems, a virtual contest is not for you - solve these problems in the archive. If you just want to solve some problem from a contest, a virtual contest is not for you - solve this problem in the archive. Never use someone else's code, read the tutorials or communicate with other person during a virtual contest.
+→ Clone Contest to Mashup
+You can clone this contest to a mashup.
+
+→ Submit?
+Language:	
+PyPy 3.10 (7.3.15, 64bit)
+Choose file:	No file chosen
+→ Problem tags
+dpgreedymath
+No tag edit access
+→ Contest materials
+Announcement (en)
+Tutorial (en)
+ProblemsSubmit CodeMy SubmissionsStatusHacksRoomStandingsCustom Invocation
+C. Stamina and Tasks
+time limit per test2 seconds
+memory limit per test256 megabytes
+There are 𝑛
+ tasks for you. Task 𝑖
+ has an integer value of 𝑐𝑖
+ and a difficulty of 𝑝𝑖
+. Also, you have an initial stamina of 1
+, which is denoted as 𝑆
+. You should process the tasks from task 1
+ to task 𝑛
+. For each task, you have two choices.
+
+Give up the task. This way, nothing will happen.
+Complete the task. This way, you will gain 𝑆⋅𝑐𝑖
+ points. However, 𝑆
+ will drop to 𝑆⋅(1−𝑝𝑖100)
+ after the task is completed.
+You need to maximize your points after you finish the process.
+
+Input
+Each test contains multiple test cases. The first line contains the number of test cases 𝑡
+ (1≤𝑡≤103
+). The description of the test cases follows.
+
+The first line of each test cases contain an integer 𝑛
+ (1≤𝑛≤105
+) denoting the number of tasks.
+
+The following 𝑛
+ lines contain two integers each, denoting 𝑐𝑖
+ (1≤𝑐𝑖≤100
+) and 𝑝𝑖
+ (0≤𝑝𝑖≤100
+).
+
+It is guaranteed that the sum of 𝑛
+ over all test cases does not exceed 105
+.
+
+Output
+For each test case, output a single real number — the maximum possible points you can get. Your answer is considered correct if its absolute or relative error does not exceed 10−6
+.
+
+Formally, let your answer be 𝑎
+, and the jury's answer be 𝑏
+. Your answer is accepted if and only if |𝑎−𝑏|max(1,|𝑏|)≤10−6
+.
+
+Example
+InputCopy
+2
+2
+10 0
+20 5
+3
+10 5
+10 80
+20 5
+OutputCopy
+30.0000000000
+29.0000000000
+Note
+In the first test case, it's optimal to complete task 1
+ and 2
+ in order, gaining points of 10+20=30
+.
+
+In the second test case, it's optimal to complete task 1
+, give up task 2
+, and complete task 3
+. Before completing task 3
+, your stamina has dropped to 1−5100=0.95
+. So your gain is 10+20⋅0.95=29
+ points in total.
+
+
+
+Codeforces (c) Copyright 2010-2026 Mike Mirzayanov
+The only programming contests Web 2.0 platform
+Server time: Mar/17/2026 15:43:11UTC-4 (g1).
+Desktop version, switch to mobile version.
+Privacy Policy | Terms and Conditions
+Supported by
+TON
+ 
+ITMO University
