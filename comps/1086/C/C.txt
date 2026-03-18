@@ -1,11 +1,5 @@
-Codeforces
-In English По-русски
-marybauman | Logout
- You have +227! Wow!
 
-HomeTopCatalogContestsGymProblemsetGroupsRatingEduAPICalendarHelp
-
-
+https://codeforces.com/contest/2208/problem/C
 Codeforces Round 1086 (Div. 2)
 Finished
 Practice
@@ -15,17 +9,6 @@ Virtual contest is a way to take part in past contest, as close as possible to p
 → Clone Contest to Mashup
 You can clone this contest to a mashup.
 
-→ Submit?
-Language:	
-PyPy 3.10 (7.3.15, 64bit)
-Choose file:	No file chosen
-→ Problem tags
-dpgreedymath
-No tag edit access
-→ Contest materials
-Announcement (en)
-Tutorial (en)
-ProblemsSubmit CodeMy SubmissionsStatusHacksRoomStandingsCustom Invocation
 C. Stamina and Tasks
 time limit per test2 seconds
 memory limit per test256 megabytes
@@ -101,15 +84,3 @@ In the second test case, it's optimal to complete task 1
 , your stamina has dropped to 1−5100=0.95
 . So your gain is 10+20⋅0.95=29
  points in total.
-
-
-
-Codeforces (c) Copyright 2010-2026 Mike Mirzayanov
-The only programming contests Web 2.0 platform
-Server time: Mar/17/2026 15:43:11UTC-4 (g1).
-Desktop version, switch to mobile version.
-Privacy Policy | Terms and Conditions
-Supported by
-TON
- 
-ITMO University
