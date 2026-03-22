@@ -1,3 +1,5 @@
+from time import time
+startTime = time()
 tests = int(input())
 for test in range(tests):
     numberOfTasks = int(input())
@@ -17,7 +19,6 @@ for test in range(tests):
 
         # print(f"c: {c}, difficulty: {difficulty}, stamina: {stamina}, points: {points}")
 
-        
         # print("about to doNothing")
         doNothing = float(makeChoice(task + 1, stamina, points))
 
@@ -31,3 +32,4 @@ for test in range(tests):
 
     maxPossiblePoints = makeChoice(0, 1, 0)
     print(maxPossiblePoints)
+print("Time taken: ", time() - startTime)
