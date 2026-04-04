@@ -1,35 +1,34 @@
 from time import time
 startTime = time()
+
 tests = int(input())
+
 for test in range(tests):
     numberOfTasks = int(input())
-    tasks = []
-    for _ in range(numberOfTasks):
-        #each task is c,p
-        #c is int, p is difficulty
-        tasks.append(list(map(float, input().split())))
-    # print("tasks: ", tasks)
+    tasks = [list(map(float, input().split())) for _ in range(numberOfTasks)]
+    memo = {}
+    def makeChoice(task, stamina):
+        stamina_rounded = round(stamina, 6)
+        state = (task, stamina_rounded)
+        if state in memo:
+            return memo[state]
 
-    def makeChoice(task, stamina, points):
-        if task >= numberOfTasks: 
-            # print(f"at {points} points: no more tasks")
-            return points
-        
-        c, difficulty = tasks[task]
+        if task >= numberOfTasks:
+            return 0
 
-        # print(f"c: {c}, difficulty: {difficulty}, stamina: {stamina}, points: {points}")
+        stamina2 = stamina * (1-(tasks[task][1]/100))
+        points_from_this_task = stamina * tasks[task][0]
 
-        # print("about to doNothing")
-        doNothing = float(makeChoice(task + 1, stamina, points))
+        if stamina2 < stamina:
+            doNothing = makeChoice(task + 1, stamina)
+            doTask = points_from_this_task + makeChoice(task + 1, stamina2)
+            result = max(doNothing, doTask)
+        else:
+            result = points_from_this_task + makeChoice(task + 1, stamina2)
 
-        #do task
-        points += stamina * c
-        stamina *= (1-(difficulty/100))
-        # print("about to do task")
-        doTask = float(makeChoice(task + 1, stamina, points))
+        memo[state] = result
+        return result
 
-        return max(doNothing, doTask)
-
-    maxPossiblePoints = makeChoice(0, 1, 0)
+    maxPossiblePoints = makeChoice(0, 1)
     print(maxPossiblePoints)
 print("Time taken: ", time() - startTime)

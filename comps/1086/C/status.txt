@@ -1,7 +1,18 @@
-TLE
+Submitted: TLE
 in Time: 0.00011801719665527344
 in-test Time: 5.947111129760742
 
+Do Nothing Discretion
+in Time: 0.0000901222229004
+in-test Time: 5.767290830612183
 
+Memoization- rounding to 4
+in-test Time: 0.18468499183654785
+in-test-2 Time: 34.14896106719971
 
+Memoization- rounding to 3 
+in-test Time: 0.03229498863220215
+in-test-2 Time: 3.1986818313598633
+
+Submitted: Wrong answer on test 1, tried with memoization 3,4, and 6
 
