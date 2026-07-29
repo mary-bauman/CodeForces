@@ -1,5 +1,5 @@
 https://codeforces.com/problemset/problem/71/A
-
+Accepted
 
 A. Way Too Long Words
 time limit per test1 second
