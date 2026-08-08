@@ -1,1 +1,3 @@
-Accepted
+Efficient Accepted- 156 ms
+One line Accepted- 124 ms
+Readable Accepted- 156 ms
