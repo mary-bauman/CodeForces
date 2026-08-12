@@ -1,3 +1,1 @@
-word = input()
-if sum(1 for c in word if c.isupper()) > (len(word)//2): print(word.upper())
-else: print(word.lower())
+w=input(); print(w.upper() if sum(1 for c in w if c.isupper())*2>len(w) else w.lower())

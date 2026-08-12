@@ -1,2 +1,5 @@
 59A.py Accepted 124 ms
+
 59A-short.py Accepted 156 ms 3 lines
+59A-short.py Accepted 156 ms 2 lines
+59A-short.py Accepted 124 ms 1 line
