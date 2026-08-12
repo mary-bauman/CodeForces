@@ -1,1 +1,2 @@
-59A Accepted 124 ms
+59A.py Accepted 124 ms
+59A-short.py Accepted 156 ms 3 lines
