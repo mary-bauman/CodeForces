@@ -1,2 +1,3 @@
 Brute force: Memory limit exceeded on test 8
-Efficient: Accepted 124 ms
+Efficient version 1: Accepted 124 ms
+Efficient version 2: Accepted 124 ms
