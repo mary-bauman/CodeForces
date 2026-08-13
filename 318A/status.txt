@@ -1,0 +1,3 @@
+Brute force: Memory limit exceeded on test 8
+Efficient: Wrong answer on test 7
+    8 4 should be 7
