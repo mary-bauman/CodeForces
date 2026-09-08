@@ -1,3 +1,9 @@
+from math import inf
+
 tests = int(input())
-for test in range(tests):
+for _ in range(tests):
+    x, y = map(int, input().split())
+    maxValue = -inf
+    minChanges = inf
+
     
